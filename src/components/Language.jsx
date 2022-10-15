@@ -1,4 +1,4 @@
-const Language = () => {
+const Language = (lang) => {
   return <div>Language</div>;
 };
 
