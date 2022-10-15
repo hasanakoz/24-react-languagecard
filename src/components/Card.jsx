@@ -7,9 +7,9 @@ import { data } from "../helpers/data";
 const Card = () => {
   console.log(data);
   return (
-    <Container className="bg-secondary rounded-3">
-      <h1>Programming Languages</h1>
-      <Row>
+    <Container className="bg-secondary rounded-3 mt-4 p-3">
+      <h1 className="text-warning my-3">Programming Languages</h1>
+      <Row className="g-3">
         {data.map((lang, index) => {
           return (
             <Col sm={6} md={4} lg={3} key={index}>
