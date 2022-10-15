@@ -7,8 +7,10 @@ const Language = ({ lang }) => {
   console.log(showDesk);
   return (
     <Container
-      style={{ background: "peachpuff", padding: "2rem", height: "100%" }}
+      className="h-100"
+      style={{ background: "peachpuff", padding: "2rem" }}
       onClick={() => setShowDesk(!showDesk)}
+      type="button"
     >
       {!showDesk && (
         <Container
@@ -23,7 +25,7 @@ const Language = ({ lang }) => {
       )}
 
       {showDesk && (
-        <ul>
+        <ul className="h-100">
           {options.map((item) => {
             return <li className="h5 text-start">{item}</li>;
           })}
